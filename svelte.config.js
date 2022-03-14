@@ -17,6 +17,14 @@ const config = {
 				alias: {
 					$model: path.resolve('./src/model')
 				}
+			},
+			define: {
+				'import.meta.vitest': false
+			},
+			test: {
+				includeSource: ['src/**/*.{js,ts}'],
+				globals: true,
+				setupFiles: ['src/tests/setupTests.ts']
 			}
 		}
 	}

@@ -1,0 +1,11 @@
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"paths": {
+			"$lib": ["src/lib"],
+			"$lib/*": ["src/lib/*"],
+			"$model": ["src/model"],
+			"$model/*": ["src/model/*"]
+		}
+	}
+}
